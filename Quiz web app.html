@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Africa</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <nav id="Heading" class="bg-dark">
+        <div class="container">
+          <h1>Learn Africa with <span class="text-primary"> Nice Major</span></h1>
+          <i class="fas fa-graduation-cap fa-3x"></i>
+        </div>
+      </nav>
+    </header> 
+    <div class="clr"></div>
+    <section id="topic-section">
+        <div class="text bg-light">
+          <h3>The following Questions tests your  Knowledge of Africa, they carry one point each:</h3> <br>
+          <h2>Question <span class="qnumvalue"></span> of <span class="totalqvalue"></span></h2>
+        </div>
+    </section>
+
+    <section id="questions-options">
+      <div class="container">
+        <p id="quest"></p>  
+          <div class="option">
+            <button class="btn" onclick="check(this)" id="opt1"></button> <br>
+            <button type="button" class="btn" onclick="check(this)" id="opt2"></button><br>
+            <button type="button" class="btn" onclick="check(this)" id="opt3"></button><br>
+          </div>
+      </div>
+      <button type="button" class="btn-next" onclick="next()">Next</a></button>
+    </section>
+
+    <div class="score">
+
+    </div>
+    <div class="quiz-over">
+      <div class="box">  
+        <h3>Good Try <br> 
+          You got <span class="correct-answer"> </span> out of <span class="totalquest"> </span> questions
+        </h3>
+        <button type="button" onclick="tryAgain()">Try Again</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
